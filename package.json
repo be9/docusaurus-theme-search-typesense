@@ -34,8 +34,8 @@
   "peerDependencies": {
     "react": "^16.8.4 || ^17.0.0",
     "react-dom": "^16.8.4 || ^17.0.0",
-    "@docusaurus/core": "2.0.0-beta.18",
-    "@docusaurus/theme-common": "2.0.0-beta.18"
+    "@docusaurus/core": ">= 2.0.0-beta.18",
+    "@docusaurus/theme-common": ">= 2.0.0-beta.18"
   },
   "engines": {
     "node": ">=12.13.0"
