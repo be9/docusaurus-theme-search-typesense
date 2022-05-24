@@ -29,9 +29,6 @@ function theme(context) {
     baseUrl,
     siteConfig: {title, url, favicon},
   } = context;
-  const pageComponent = './theme/SearchPage/index.js';
-  const pagePath =
-    path.resolve(__dirname, pageComponent);
 
   return {
     name: 'docusaurus-theme-search-typesense',
@@ -40,14 +37,10 @@ function theme(context) {
       return path.resolve(__dirname, './theme');
     },
 
-    getPathsToWatch() {
-      return [pagePath];
-    },
-
     async contentLoaded({actions: {addRoute}}) {
       addRoute({
         path: normalizeUrl([baseUrl, 'search']),
-        component: pagePath,
+        component: '@theme/SearchPage',
         exact: true,
       });
     },
